@@ -210,3 +210,27 @@ img {
     margin: 0;
   }
 }
+<style>
+    .box-side {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sqr {
+        position: relative;
+        animation: moveImage 2s infinite linear;
+    }
+
+    @keyframes moveImage {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(30px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+</style>
+
